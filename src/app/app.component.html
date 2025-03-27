@@ -1,1 +1,13 @@
-<h>My First commit</h>
+<div class="calc-card">
+  <div class="card">
+    <div class="content">
+      <label for="numberInput">Enter Number: </label>
+      <br>
+      <input id="numberInput" type="name" [(ngModel)]="enteredNumber" placeholder="enter the string"/>
+      <br>
+      <button (click)="calculateNumber()">Calculate</button>
+
+      <p *ngIf="showResult">the sum of the entered string is {{ calculateNumber() }}</p>
+    </div>
+  </div>
+</div>
